@@ -1,4 +1,4 @@
-( Large Letter-F )
+\ Large Letter-F
 
 : star  42 emit ;
 : stars  0 do star loop ;
@@ -7,7 +7,7 @@
 : bar  margin 5 stars ;
 : f  bar blip bar blip blip cr ;
 
-( Problems )
+\ Problems
 
 ( 1 )
 : gift ." BOOKENDS" ;
