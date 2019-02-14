@@ -61,3 +61,8 @@
 
 \ (a -- result)
 : q2b5 dup 2 * 3 + * ;
+
+\ 6. (a - b) / c
+
+\ (a b c -- result)
+: q2b6 rot rot - swap / ;
