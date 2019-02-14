@@ -3,6 +3,7 @@
 \ 1: c(a + b)  -->  a b + c *
 
 \ (a b c -- result)
+: q2a1 rot rot + * ;
 
 \ 2: (3a - b) / 4 + c  -->  3 a * b - 4 / c +
 
