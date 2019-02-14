@@ -81,3 +81,6 @@
 
 \ 3. (a b c -- c a b) 1 番目の要素を 3 番目に移動
 : <rot rot rot ;
+
+\ 6. (a b -- result)
+: q2c6 over 9 * swap - * ;
