@@ -46,3 +46,8 @@
 
 \ (c a b -- result)
 : q2b2 4 * - 6 / + ;
+
+\ 3. a / 8b
+
+\ (a b -- result)
+: q2b3 8 * / ;
