@@ -83,5 +83,8 @@
 \ 2. (1 2 3 4 -- 4 3 2 1)
 : reverse swap 2swap swap ;
 
+\ 3. (1 2 3 -- 1 2 3 1 2 3)
+: 3dup dup 2over rot ;
+
 \ 4. a^2 + ab + c  (c a b -- result)
 : p2-4 swap dup rot + * + ;
