@@ -37,45 +37,31 @@
 
 \ Definition-style Practice Problems [Quiz 2-b]
 
-\ 1. ab + c
-
-\ (c b a -- result)
+\ 1. ab + c  (c b a -- result)
 : q2b1 * + ;
 
-\ 2. (a - 4b) / 6 + c
-
-\ (c a b -- result)
+\ 2. (a - 4b) / 6 + c  (c a b -- result)
 : q2b2 4 * - 6 / + ;
 
-\ 3. a / 8b
-
-\ (a b -- result)
+\ 3. a / 8b  (a b -- result)
 : q2b3 8 * / ;
 
-\ 4. 0.5ab / 100
-
-\ (a b -- result)
+\ 4. 0.5ab / 100  (a b -- result)
 : q2b4 * 200 / ;
 
-\ 5. a(2a + 3)
-
-\ (a -- result)
+\ 5. a(2a + 3)  (a -- result)
 : q2b5 dup 2 * 3 + * ;
 
-\ 6. (a - b) / c
-
-\ (a b c -- result)
+\ 6. (a - b) / c  (a b c -- result)
 : q2b6 rot rot - swap / ;
 
 \ Stack Maniqulation and Math Definitions [Quiz 2-c]
 
 \ 1. (a b c -- c b a)
-
 \ : rev3 rot rot swap ;
 : rev3 swap rot ;
 
 \ 2. over の再実装
-
 \ (a b -- a b a)
 : over' swap dup rot swap ;
 
@@ -95,5 +81,7 @@
 )
 
 \ 2. (1 2 3 4 -- 4 3 2 1)
-
 : reverse swap 2swap swap ;
+
+\ 4. a^2 + ab + c  (c a b -- result)
+: p2-4 swap dup rot + * + ;
