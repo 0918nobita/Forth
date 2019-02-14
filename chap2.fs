@@ -1,4 +1,4 @@
-\ Postfix Practice Problems Quiz 2-a
+\ Postfix Practice Problems [Quiz 2-a]
 
 \ 1: c(a + b)  -->  a b + c *
 
@@ -34,3 +34,10 @@
 
 \ (a b -- result)
 : q2a7 10 * / ;
+
+\ Definition-style Practice Problems [Quiz 2-b]
+
+\ 1. ab + c
+
+\ (c b a -- result)
+: q2b1 * + ;
