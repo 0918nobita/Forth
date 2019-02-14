@@ -73,3 +73,8 @@
 
 \ : rev3 rot rot swap ;
 : rev3 swap rot ;
+
+\ 2. over の再実装
+
+\ (a b -- a b a)
+: over' swap dup rot swap ;
