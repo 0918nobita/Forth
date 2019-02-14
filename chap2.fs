@@ -66,3 +66,9 @@
 
 \ (a b c -- result)
 : q2b6 rot rot - swap / ;
+
+\ Stack Maniqulation and Math Definitions [Quiz 2-c]
+
+\ 1. (a b c -- c b a)
+
+: rev3 rot rot swap ;
