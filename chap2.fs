@@ -28,6 +28,7 @@
 \ 6: a b - b a + /  <--  (a - b) / (b + a)
 
 \ (a b -- result)
+: q2a6 2dup - swap rot + / ;
 
 \ 7: a b 10 * /  <--  a / 10b
 
