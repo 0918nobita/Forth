@@ -84,3 +84,12 @@
 
 \ 6. (a b -- result)
 : q2c6 over 9 * swap - * ;
+
+\ Problems
+
+( 
+  1. What is the difference between DUP DUP and 2DUP ?
+
+  dup dup  [a b -- a b b b]
+  2dup  [a b -- a b a b]
+)
