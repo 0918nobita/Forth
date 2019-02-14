@@ -71,4 +71,5 @@
 
 \ 1. (a b c -- c b a)
 
-: rev3 rot rot swap ;
+\ : rev3 rot rot swap ;
+: rev3 swap rot ;
