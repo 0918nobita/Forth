@@ -78,3 +78,6 @@
 
 \ (a b -- a b a)
 : over' swap dup rot swap ;
+
+\ 3. (a b c -- c a b) 1 番目の要素を 3 番目に移動
+: <rot rot rot ;
