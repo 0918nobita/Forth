@@ -41,3 +41,8 @@
 
 \ (c b a -- result)
 : q2b1 * + ;
+
+\ 2. (a - 4b) / 6 + c
+
+\ (c a b -- result)
+: q2b2 4 * - 6 / + ;
