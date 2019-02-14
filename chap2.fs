@@ -93,3 +93,7 @@
   dup dup  [a b -- a b b b]
   2dup  [a b -- a b a b]
 )
+
+\ 2. (1 2 3 4 -- 4 3 2 1)
+
+: reverse swap 2swap swap ;
