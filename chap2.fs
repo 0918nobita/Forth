@@ -88,3 +88,11 @@
 
 \ 4. a^2 + ab + c  (c a b -- result)
 : p2-4 swap dup rot + * + ;
+
+\ 5.
+: convicted-of 0 ;
+: homicide 20 + ;
+: arson 10 + ;
+: bookmaking 2 + ;
+: tax-evasion 5 + ;
+: will-serve . ." YEARS " ;
