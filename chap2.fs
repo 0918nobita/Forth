@@ -96,3 +96,6 @@
 : bookmaking 2 + ;
 : tax-evasion 5 + ;
 : will-serve . ." YEARS " ;
+
+\ 6.
+: egg.cartons 12 /mod . ." cartons and " . ." leftovers " ;
