@@ -1,3 +1,5 @@
+# [Starting FORTH](https://1scyem2bunjw1ghzsf1cjwwn-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/Starting-FORTH.pdf) (p. 59 〜)
+
 大概の FORTH システムではディスクメモリを使用する。
 たとえ必ずディスクメモリを使用するわけではないとしても、
 それ無しで FORTH について考えることはできない。
@@ -32,3 +34,5 @@ Forth インタプリタそのものが OS として使われていた。
 その影響か、ディスクのブロック番号を直接指定して内容を出力する list ワードや、
 その内容をさらにソーステキストとしてコンパイルする load ワードが存在する。
 ( テキストファイルを指定してコンパイルする場合は include ワードを用いる )
+
+# [gforth-0.6.2.pdf](https://www.complang.tuwien.ac.at/forth/gforth/old/gforth-0.6.2.pdf) (p. 119 〜)
