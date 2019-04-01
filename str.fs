@@ -1,7 +1,10 @@
-create str 1 cells allot
+CREATE str 1 CELLS ALLOT
 
-char a str !
-char b str 1 + !
-char c str 2 + !
+CHAR a str !
+CHAR b str 1 + !
+CHAR c str 2 + !
 
-str 3 type
+str 3 TYPE
+
+S" def" str SWAP MOVE
+str 3 TYPE
