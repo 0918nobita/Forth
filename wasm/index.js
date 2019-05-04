@@ -9,8 +9,8 @@ const importObj = {
   }
 };
 
-WebAssembly.instantiateStreaming(fetch('example.wasm'), importObj).then(obj => {
-  obj.instance.exports.add(2, 5);
-});
-
-console.log(memory);
+(async () => {
+  const resultObj = await WebAssembly.instantiateStreaming(fetch('example.wasm'), importObj);
+  resultObj.instance.exports.add(2, 5);
+  console.log(memory);
+})();
