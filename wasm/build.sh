@@ -1,7 +1,4 @@
-cd ./src
-
-for file in `\find . -maxdepth 1 -name '*.wat'`; do
-  wat2wasm $file -o "../dist/${file/.wat/.wasm}"
+for file in `\find ./src -maxdepth 1 -name '*.wat'`; do
+  name=${file##*/}
+  wat2wasm $file -o "./dist/${name/.wat/.wasm}"
 done
-
-cd ..
