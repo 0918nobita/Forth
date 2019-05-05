@@ -2,8 +2,9 @@
   "name": "wasm",
   "version": "1.0.0",
   "scripts": {
-    "serve": "static ./ -p 1234",
-    "build": "wat2wasm ./*.wat"
+    "serve": "yarn build && static ./dist -p 1234",
+    "gen-wasm": "sh ./build.sh",
+    "build": "yarn gen-wasm && tsc"
   },
   "main": "index.js",
   "license": "MIT",
