@@ -115,6 +115,40 @@ namespace WebAssembly {
    * The type is thrown whenever WebAssembly specifies a trap.
    */
   export declare class RuntimeError extends Error {}
+
+  /**
+   * @param bufferSource A typed array or ArrayBuffer containing the binary code of the .wasm module you want to compile.
+   * @returns A `Promise` that resolves to a `WebAssembly.Module` object representing the compiled module.
+   */
+  export declare function compile(bufferSource: BufferSource): Promise<Module>;
+
+  /**
+   * Compile a WebAssembly.Module directly from a streamed underlying source.
+   * This function is useful if it is necessary to a compile a module before it can be instantiated
+   * (otherwise, the WebAssembly.instantiateStreaming() function should be used) .
+   * @param source A Response object or a promise that will fulfill with one,
+   * representing the underlying source of a .wasm module you want to stream and compile.
+   */
+  export declare function compileStreaming(source: Response | Promise<Response>): Promise<Module>;
+
+  export interface ResultObject {
+    module: Module;
+
+    /** A `WebAssembly.Instance` object that contains all the exported WebAssembly functions. */
+    instance: Instance;
+  }
+
+  /**
+   * Compiles and instantiates a WebAssembly module directly from a streamed underlying source.
+   * This is the most efficient, optimized way to load wasm code.
+   * @param source A Response object or a promise that will fulfill with one,
+   * representing the underlying source of a .wasm module you want to stream, compile, and instantiate.
+   * @param importObject An Object containing the values to be imported into the newly-created Instance,
+   * such as functions or WebAssembly.Memory objects.
+   * There must be one matching property for each declared import of the compiled module or
+   * else a WebAssembly.LinkError is thrown.
+   */
+  export declare function instantiateStreaming(source: Response | Promise<Response>, importObject?: object): Promise<ResultObject>;
 }
 
 const memory = new WebAssembly.Memory({ initial: 1 });
