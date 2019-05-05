@@ -117,13 +117,16 @@ namespace WebAssembly {
   export declare class RuntimeError extends Error {}
 
   /**
+   * Compiles a `WebAssembly.Module` from WebAssembly binary code.
+   * This function is useful if it is necessary to a compile a module before it can be instantiated
+   * (otherwise, the `WebAssembly.instantiate()` function should be used ) .
    * @param bufferSource A typed array or ArrayBuffer containing the binary code of the .wasm module you want to compile.
    * @returns A `Promise` that resolves to a `WebAssembly.Module` object representing the compiled module.
    */
   export declare function compile(bufferSource: BufferSource): Promise<Module>;
 
   /**
-   * Compile a WebAssembly.Module directly from a streamed underlying source.
+   * Compiles a WebAssembly.Module directly from a streamed underlying source.
    * This function is useful if it is necessary to a compile a module before it can be instantiated
    * (otherwise, the WebAssembly.instantiateStreaming() function should be used) .
    * @param source A Response object or a promise that will fulfill with one,
@@ -132,6 +135,10 @@ namespace WebAssembly {
   export declare function compileStreaming(source: Response | Promise<Response>): Promise<Module>;
 
   export interface ResultObject {
+    /**
+     * A `WebAssembly.Module` object representing the compiled WebAssembly module.
+     * This `Module` can be instantiated again or shared via `postMessage()` .
+     */
     module: Module;
 
     /** A `WebAssembly.Instance` object that contains all the exported WebAssembly functions. */
