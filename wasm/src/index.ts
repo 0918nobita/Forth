@@ -1,3 +1,6 @@
+namespace WebAssembly {
+}
+
 const memory = new WebAssembly.Memory({ initial: 1 });
 
 const importObj = {
