@@ -39,6 +39,11 @@ typescript@^3.4.5:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.5.tgz#2d2618d10bb566572b8d7aad5180d84257d70a99"
   integrity sha512-YycBxUb49UUhdNMU5aJ7z5Ej2XGmaIBL0x34vZ82fn3hGvD+bgrMrVDpatgz2f7YxUMJxMkbWxJZeAvDxVe7Vw==
 
+wasm-ts@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/wasm-ts/-/wasm-ts-0.1.2.tgz#42ac27db8fa1e48a495dd4d5a7cc17b7c6d7abd0"
+  integrity sha512-zC3nF2eEGxlMUU4Q8Lzl6RwrnifYRjk5dwCWXKnOlMeC/SxeR1OmC9HJJMJhlq3alzG6agcHUfaw27wsQ99A3Q==
+
 wordwrap@~0.0.2:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
