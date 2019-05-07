@@ -1,4 +1,4 @@
-import { WebAssembly } from 'wasm-ts';
+import 'wasm-ts';
 
 const memory = new WebAssembly.Memory({ initial: 1 });
 
