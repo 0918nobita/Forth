@@ -1,6 +1,6 @@
 : 2times  ( xt "<spaces>name" -- )
   CREATE ,
-  DOES> @ SWAP OVER EXECUTE SWAP EXECUTE
+  DOES> @ TUCK EXECUTE SWAP EXECUTE
 ;
 
 : plus3  ( n -- n )  3 + ;
