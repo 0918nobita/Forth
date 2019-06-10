@@ -18,3 +18,14 @@
 ' mul4 2times mul16 ( define mul16 )
 
 2 mul16 . ( => 32 )
+
+: counter  ( n "<spaces>name" -- )
+  CREATE ,
+  DOES> DUP DUP @ 1 + SWAP ! @
+;
+
+-1 counter c ( define c )
+c . ( => 0 )
+c . ( => 1 )
+c . ( => 2 )
+c . ( => 3 )
