@@ -633,35 +633,208 @@ look
 prim>name
 PrimStart
 threaded>xt
-search-name xt>threaded base-execute infile-execute outfile-execute l@
-w@ /l /w typewhite what's action-of f.s f.rdp f>str-rdp f>buf-rdp
-f>buf-rdp-try push-right ]] postponer1 [[ compile-compile-2literal
-compile-2literal compile-compile-literal compile-literal slurp-fid
-slurp-file const-does> (const-does>) compile-fliterals compile-literals
-in-return-stack? ]L sh system $? dmax dmin ?CSP !CSP CSP needs
-locals| TO definer! >definer (local) (exit-like) (until-like)
-(again-like) (begin-like) (then-like) locals-;-hook locals-:-hook
-endscope adjust-locals-list scope { old-dpp new-locals-wl
-new-locals-map new-locals-reveal new-locals-find some-wlocal some-flocal
-some-dlocal some-clocal locals-types lp-offset, lp-offset create-local
-compile-pushlocal-c compile-pushlocal-d compile-pushlocal-f check-begin
-set-locals-size-list list-size sub-list? common-list compile-pushlocal-w
-alignlp-f alignlp-w locals-dp locals-buffer locals adjust-locals-size
-compile-lp+! compile-f@local compile-@local FMOD FTRUNC f~ f~rel f~abs
-1/f f2/ f2* pi fvariable sfnumber fs. fe. f. f$ -zeros zeros
-scratch set-precision precision FLiteral fdepth fconstant f, dfloat+
-sfloat+ dfalign sfalign .words hash-cold make-hash (hashsearch-map)
-hashdouble (rehash) rehashall clearhash addall inithash hash-reveal
-(reveal lastlink! hash-find bucket NewFix DelFix hash-alloc
-hashsearch-map HashTable HashPop HashIndex HashPointer revealed insRule
-hash Hashlen hashbits reserve-mem marker marker! marker,
-included-files-mark expect span search blank erase convert [compile]
-C" endcase endof of case m*/ d>s .( broken-pipe-error exception
-next-exception errstring linked include-ffi.h-string libffi-present
-ffcall-present libtool-flags libtool-cc libtool-command has? $has? e?
-environment? environment-wordlist environment vocs order .voc .name
-.id id. seal set-order get-order init-vp update-image-order Only Root
-Forth vocsearch (localsvocfind) locals-wordlist (vocfind) previous also
+search-name
+xt>threaded
+base-execute
+infile-execute
+outfile-execute
+l@
+w@
+/l
+/w
+typewhite
+what's
+action-of
+f.s
+f.rdp
+f>str-rdp
+f>buf-rdp
+f>buf-rdp-try
+push-right
+]]
+postponer1
+[[
+compile-compile-2literal
+compile-2literal
+compile-compile-literal
+compile-literal
+slurp-fid
+slurp-file
+const-does>
+(const-does>)
+compile-fliterals
+compile-literals
+in-return-stack?
+]L
+sh
+system
+$?
+dmax
+dmin
+?CSP
+!CSP
+CSP
+needs
+locals|
+TO
+definer!
+>definer
+(local)
+(exit-like)
+(until-like)
+(again-like)
+(begin-like)
+(then-like)
+locals-;-hook
+locals-:-hook
+endscope
+adjust-locals-list
+scope
+{
+old-dpp
+new-locals-wl
+new-locals-map
+new-locals-reveal
+new-locals-find
+some-wlocal
+some-flocal
+some-dlocal
+some-clocal
+locals-types
+lp-offset,
+lp-offset
+create-local
+compile-pushlocal-c
+compile-pushlocal-d
+compile-pushlocal-f
+check-begin
+set-locals-size-list
+list-size
+sub-list?
+common-list
+compile-pushlocal-w
+alignlp-f
+alignlp-w
+locals-dp
+locals-buffer
+locals
+adjust-locals-size
+compile-lp+!
+compile-f@local
+compile-@local
+FMOD
+FTRUNC
+f~
+f~rel
+f~abs
+1/f
+f2/
+f2*
+pi
+fvariable
+sfnumber
+fs.
+fe.
+f.
+f$
+-zeros
+zeros
+scratch
+set-precision
+precision
+FLiteral
+fdepth
+fconstant
+f,
+dfloat+
+sfloat+
+dfalign
+sfalign
+.words
+hash-cold
+make-hash
+(hashsearch-map)
+hashdouble
+(rehash)
+rehashall
+clearhash
+addall
+inithash
+hash-reveal
+(reveal
+lastlink!
+hash-find
+bucket
+NewFix
+DelFix
+hash-alloc
+hashsearch-map
+HashTable
+HashPop
+HashIndex
+HashPointer
+revealed
+insRule
+hash
+Hashlen
+hashbits
+reserve-mem
+marker
+marker!
+marker,
+included-files-mark
+expect
+span
+search
+blank
+erase
+convert
+[compile]
+C"
+endcase
+endof
+of
+case
+m*/
+d>s
+.(
+broken-pipe-error
+exception
+next-exception
+errstring
+linked
+include-ffi.h-string
+libffi-present
+ffcall-present
+libtool-flags
+libtool-cc
+libtool-command
+has?
+$has?
+e?
+environment?
+environment-wordlist
+environment
+vocs
+order
+.voc
+.name
+.id
+id.
+seal
+set-order
+get-order
+init-vp
+update-image-order
+Only
+Root
+Forth
+vocsearch
+(localsvocfind)
+locals-wordlist
+(vocfind)
+previous
+also
 >order
 check-maxvp
 Vocabulary
@@ -685,10 +858,35 @@ double%
 sfloat%
 dfloat%
 float%
-char% cell% struct end-struct field create-field field,
-dozerofield nalign naligned endtry-iferror endtry restore iferror
-handler-intro, (endtry) try (try) nothrow first-throw store-backtrace
-dodoes: dofield: dodefer: douser: dovar: docol: dovalue: docon: vlist
+char%
+cell%
+struct
+end-struct
+field
+create-field
+field,
+dozerofield
+nalign naligned
+endtry-iferror
+endtry
+restore
+iferror
+handler-intro,
+(endtry)
+try
+(try)
+nothrow
+first-throw
+store-backtrace
+dodoes:
+dofield:
+dodefer:
+douser:
+dovar:
+docol:
+dovalue:
+docon:
+vlist
 words
 wordlist-words
 cols
@@ -796,17 +994,78 @@ non-orig?
 scope?
 do-dest?
 dest?
-orig? def? scopestart do-dest dest dead-orig live-orig ASSUME-LIVE
-UNREACHABLE backedge-locals dead-code locals-list .included .strings
-require include required included included1 add-included-file included?
-init-included-files sourceline# sourcefilename image-included-files
-included-files open-fpath-file open-path-file check-path open-ofile
-reworkdir compact-filename skip-..-prefixes preserve-root del-./s
-del-string expandtopic remove~+ extractpath need/ pathsep? tfile ofile
-absolut-path? .fpath .path previous-path next-path path>string fpath=
-path= fpath+ path+ only-path clear-path also-path os-cold make-path
-fpath +place path-allot ( write-line bin r/o r/w w/o os-boot
-(process-args) process-option args-evaluate args-required args-required1
+orig?
+def?
+scopestart
+do-dest
+dest
+dead-orig
+live-orig
+ASSUME-LIVE
+UNREACHABLE
+backedge-locals
+dead-code locals-list
+.included
+.strings
+require
+include
+required
+included
+included1
+add-included-file
+included?
+init-included-files
+sourceline#
+sourcefilename
+image-included-files
+included-files
+open-fpath-file
+open-path-file
+check-path
+open-ofile
+reworkdir
+compact-filename
+skip-..-prefixes
+preserve-root
+del-./s
+del-string
+expandtopic
+remove~+
+extractpath
+need/
+pathsep?
+tfile
+ofile
+absolut-path?
+.fpath
+.path
+previous-path
+next-path
+path>string
+fpath=
+path=
+fpath+
+path+
+only-path
+clear-path
+also-path
+os-cold
+make-path
+fpath
++place
+path-allot
+(
+write-line
+bin
+r/o
+r/w
+w/o
+os-boot
+(process-args)
+process-option
+args-evaluate
+args-required
+args-required1
 os-execute-parsing
 next-arg
 shift-args
@@ -869,14 +1128,66 @@ name>comp (compile) dodoes, (does>2) (does>) !does compile-to-prims,
 peephole-compile, basic-block-end compile, cfa, [char] char char@
 ALiteral 2Literal Literal latest lastxt latestxt noname noname-header
 nextname nextname-header nextname-string input-stream input-stream-header
-header, longstring, string, header (header) const A, cfalign maxalign
-falign align 2, , c, allot bye boot cold 'cold process-args
-bootmessage (bootmessage) quit (DoError) .error-frame .error-line
-part-type mark-end mark-start umin .error-string dobacktrace DOERROR
--trailing hex. dec.r dec. input-error-data >error error> error-stack
-/error max-errors (quit) prompt .status 'quit extend-mem free-mem-var
-save-mem interpreter1 interpret interpret1 before-word no.extensions
-interpreter-notfound1 compiler-notfound1 name parse-word parse-name
+header,
+longstring,
+string,
+header
+(header)
+const
+A,
+cfalign
+maxalign
+falign
+align
+2,
+,
+c,
+allot
+bye
+boot
+cold
+'cold
+process-args
+bootmessage
+(bootmessage)
+quit
+(DoError)
+.error-frame
+.error-line
+part-type
+mark-end
+mark-start
+umin
+.error-string
+dobacktrace
+DOERROR
+-trailing
+hex.
+dec.r
+dec.
+input-error-data
+>error
+error>
+error-stack
+/error
+max-errors
+(quit)
+prompt
+.status
+'quit
+extend-mem
+free-mem-var
+save-mem
+interpreter1
+interpret
+interpret1
+before-word
+no.extensions
+interpreter-notfound1
+compiler-notfound1
+name
+parse-word
+parse-name
 parser
 parser1
 '
